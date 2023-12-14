@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec8 Forms in HTML</title>
+    <style>
+        body{
+            background-color: rgb(228, 60, 60);
+            color: rgb(158, 208, 8);
+        }
+    </style>
+</head>
+
+<body>
+<!-- action attribute of form will be learned later -->
+    <form>
+        <label for="email">Email ID:</label>
+        <input type="text" id="email">
+        <br> <br>
+        <label for="pass">Password:</label>
+        <input type="text" id="pass">
+        <br> <br>  <!--PASSWORD IS NOT HIDDEN -->
+
+        <fieldset>
+            <legend>Subjects</legend>
+            <input type="radio" name="Subjects" id="Physics">
+            <label for="Physics">Physics</label> <br>
+            <input type="radio" name="Subjects" id="Chem">
+            <label for="Chem">Chemistry</label>
+        </fieldset> <br> <br>
+        <input type="submit" value="Submit">
+        <button>Clear</button>
+        <!-- Getting Buttons via two methods --> 
+        <br> <br> 
+
+    <!-- single option selection -->
+        <label for="Car">Select Your Dream CAR</label>
+        <select name="Car" id="Car">
+            <option value="fhebg">Select</option>
+            <option value="fhebg">Maruti</option>
+            <option value="fhebg">Selecddfft</option>
+        </select>
+        <br> <br> 
+
+    <!-- multiple option selection  -->
+        <label for="Car">Select Your Dream CAR</label>
+        <select name="Car" id="Car" multiple>
+            <option value="fhebg">Select</option>
+            <option value="fhebg">Maruti</option>
+            <option value="fhebg">Selecddfft</option>
+        </select>
+        <br> <br> 
+
+
+        <textarea name="" id="" cols="30" rows="10" placeholder="Enter Text here...."></textarea> <br> <br>
+
+        <input type="date" name="date" id="date">
+
+        <br> <br>
+
+
+<!-- using input type "password", the entered Text Data will be hidden in dots  -->
+        <label for="pass">Enter Password:</label>
+        <input type="password" name="pass" id="pass">
+    </form>
+</body>
+
+</html>

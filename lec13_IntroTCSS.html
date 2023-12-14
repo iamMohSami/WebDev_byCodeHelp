@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        h4{
+            background-color: red;
+            color: black;
+        }
+    </style>
+
+    <link rel="stylesheet" href="lec13_style.css">
+</head>
+<body>
+    <!-- 3 TYPES , INLINE ,INTERNAL AND EXTERNAL  -->
+
+    <!-- INLINE -->
+    <p style="background-color: aqua;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iste aperiam sed eligendi quod iusto accusamus dolore adipisci fuga deleniti.</p>
+
+    <!-- INTERNAL written in Head -->
+    <h4>Internal CSS Styled</h4>
+
+    <!-- EXTERNAL CSS lec13.css file  -->
+    <p class="cl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus qui ea impedit?</p>
+    <p id="temp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati suscipit atque dolores ipsum maxime alias minima in nobis assumenda amet nam ea animi, dignissimos, corporis, at numquam id molestiae nulla! Magnam cumque possimus neque, magni animi voluptate omnis laboriosam ipsum nostrum, libero assumenda accusantium esse officia ea alias numquam doloribus corrupti. Totam quos architecto blanditiis dolorum deleniti dolores iste, sed vitae laborum cumque nobis qui, inventore eveniet voluptatem necessitatibus ipsam! Nobis ea perferendis amet beatae nemo veritatis aut laborum, error expedita dolores animi laboriosam, eaque necessitatibus inventore reiciendis earum quas, tempora aliquid. Ipsa ullam quia veritatis temporibus nulla doloremque sapiente!</p>
+
+    <!-- SPECIFICITY OF CSS : INLINE > INTERNAL AND EXTERNAL  -->
+    <!-- AMONG INTERNAL AND EXTERNAL, IT DEPENDS ON THE ORDER OF DECLARATION OF INTERNAL STYLE AND LINK STATEMENT -->
+    <!-- USE OF IMPORTANT TAG -->
+    <!-- IMPORTANT USED IN EXTERNAL CSS -->
+    <p class="useimp" style="background-color: chocolate;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore asperiores possimus quam? Quaerat sed soluta quis fuga deserunt tempora eius autem architecto, dolor a cum, enim distinctio adipisci voluptates odit. Dignissimos ad quaerat ex officia consectetur enim laudantium consequatur, ipsum aperiam rem? Sequi debitis veritatis consectetur voluptate harum non alias.
+    </p>
+
+    <!-- CONCEPT OF SELECTORS -->
+    <!-- 1.ELEMENT SELECTOR, 2.ID SELECTOR "#" , 3.CLASS SELECTOR  "." , 4.GROUP SELECTORS -->
+    <!-- GROUP SELECTOR IS USED TO APPLY ON MORE THAN ONE TAG , USING AN "," -->
+
+    <p class="grp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos laboriosam reiciendis totam placeat maxime illo voluptas neque nostrum repellat enim nulla architecto dolores eligendi provident iure quae quia, beatae iste! Optio, atque. Laudantium vitae corporis quisquam impedit in accusantium, at corrupti harum voluptatibus molestiae placeat ea error nihil, obcaecati maxime!</p>
+    <article class="grp">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur iure animi eligendi eum ratione! Quasi ratione at libero cupiditate cumque, minus ab repellendus hic, aperiam fugit tempora, explicabo nulla consequatur dolorem. Minima esse ab repudiandae modi autem labore quaerat qui eaque, ad nostrum suscipit sed voluptas at aspernatur sequi. Provident nihil id quas praesentium optio sapiente distinctio iste, nesciunt adipisci voluptatibus voluptates voluptate quis placeat recusandae ipsam dolorum repudiandae, aspernatur asperiores corporis tempore cum! Rerum error molestiae, porro optio eligendi maiores totam, eos voluptates temporibus dolores recusandae beatae id suscipit numquam aliquid eius veniam magnam nemo qui, placeat veritatis aut modi! Delectus, quisquam dolorem maiores, obcaecati nesciunt quidem veniam dolorum voluptates nulla sequi illum assumenda aliquam a nihil placeat reprehenderit eum rerum voluptatum! Tempore eum cum minima odit pariatur illo a reiciendis possimus molestias incidunt. Error doloribus aspernatur veniam similique iusto vitae accusamus reiciendis rerum expedita aut neque dolorem ab velit libero, eveniet veritatis officia molestias excepturi minima est inventore? Harum repudiandae id neque, repellat et eaque officia odio cupiditate eligendi ratione maxime hic, consectetur deserunt totam tempora molestias omnis quis quia ipsum recusandae soluta nesciunt laudantium commodi odit! Dolore provident dignissimos excepturi hic maxime placeat architecto. Mollitia, autem architecto.
+    </article>
+
+</body>
+</html>

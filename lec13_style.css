@@ -1,0 +1,21 @@
+p{
+    color: green;
+}
+
+.cl {
+    background-color: pink;
+}
+
+#temp {
+    background-color: orange;
+}
+
+.useimp {
+    background-color: red !important;
+}
+
+/* example of group selctor */
+p.grp , article.grp {
+    text-align: center;
+    background-color: rgb(112, 57, 66);
+}

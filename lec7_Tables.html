@@ -1,0 +1,219 @@
+
+<!-- What we have learnt in this lecture??
+- Tables in HTML
+- Tags used in tables in HTML(<table> <thead> <tbody> <tfoot> <thh> <tr> <td>)
+- row span : used to extend columns
+- col span : used to extend rows
+- created 4 tables in the lecture and we have to practice more tables in homework.. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lec 7 Tables</title>
+</head>
+
+<body>
+    <div class="table" id="table1">
+        <table style="width: 100%;text-align:center ;" border="1">
+            <thead>
+                <tr>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
+                    <th>Gender</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1234</td>
+                    <td>Bill</td>
+                    <td>Male</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>1235</td>
+                    <td>Messi</td>
+                    <td>Male</td>
+                    <td rowspan="2">18</td>
+                </tr>
+                <tr>
+                    <td>1236</td>
+                    <td>Kohli</td>
+                    <td>Male</td>
+
+                </tr>
+                <tr>
+                    <td>1237</td>
+                    <td>Alia</td>
+                    <td>Female</td>
+                    <td>20</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <br> <br> <br>
+
+    <div class="table" id="table2">
+        <table border="1" style="width: 50%; text-align: center;">
+            <thead>
+                <th>Column1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="2">Row1 Cell1</td>
+                    <td>Row1 Cell2</td>
+                    <td>Row1 Cell3</td>
+                </tr>
+                <tr>
+                    <td>Row2 Cell2</td>
+                    <td>Row2 Cell3</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="text-align: left;">
+                    <td colspan="3">Row3 Cell1</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <br> <br> <br>
+
+    <div class="table" id="table3">
+        <table border="1" style="width: 100%;    text-align: center;">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th style="width: 5cm
+                ;">Full Name</th>
+                    <th>Company</th>
+                    <th>Salary</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bill Gates</td>
+                    <td>Microsoft</td>
+                    <td>$1000</td>
+                    <td rowspan="4">Company Founder</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Steve Jobs</td>
+                    <td>Apple</td>
+                    <td>$1200</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Larry Page</td>
+                    <td>Google</td>
+                    <td>$1100</td>
+
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mark Zuckerberg</td>
+                    <td>Facebook</td>
+                    <td>$1300</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3">Total Expense:</td>
+                    <td>$4600</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <br> <br> <br>
+
+    <div class="table" id="table4">
+        <table border="1" style="width: 100%;text-align: center;">
+            <thead>
+                <tr>
+                    <th>Country</th>
+                    <th>State</th>
+                    <th>City</th>
+                    <th>Street</th>
+                    <th>Male</th>
+                    <th>Female</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="8">India</td>
+                    <td rowspan="4">Kerala</td>
+                    <td rowspan="2">Kochi</td>
+                    <td>New Street</td>
+                    <td>500</td>
+                    <td>600</td>
+                </tr>
+                <tr>
+                    <td>Main Street</td>
+                    <td>300</td>
+                    <td>288</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Trivandrum</td>
+                    <td>Shah Rukh Street</td>
+                    <td>363</td>
+                    <td>425</td>
+                </tr>
+                <tr>
+                    <td>Khan Street</td>
+                    <td>589</td>
+                    <td>549</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">Maharashtra</td>
+                    <td rowspan="2">Mumbai</td>
+                    <td>Lionel Street</td>
+                    <td>823</td>
+                    <td>498</td>
+                </tr>
+                <tr>
+                    <td>Messi Street</td>
+                    <td>456</td>
+                    <td>459</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Pune</td>
+                    <td>Barca Street</td>
+                    <td>456</td>
+                    <td>325</td>
+                </tr>
+                <tr>
+                    <td>Man City Street</td>
+                    <td>897</td>
+                    <td>498</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">United States of America</td>
+                    <td rowspan="2">Washington</td>
+                    <td rowspan="2">New York</td>
+                    <td>Avengers Street</td>
+                    <td>153</td>
+                    <td>146</td>
+                </tr>
+                <tr>
+                    <td>Saint Mary Street</td>
+                    <td>148</td>
+                    <td>179</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
