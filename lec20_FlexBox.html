@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX</title>
+    <style>
+        *{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            margin: 10px;
+        }
+        .cont{
+            margin: 20px;
+            padding: 10px;
+            border: 3px solid black;
+            height: 70vh;
+            width: 75vw;
+            background-color: rgb(194, 194, 86);
+            display: flex;
+            flex-direction: row;
+        }
+        img{
+            height: 33%;
+            width: 33%;
+            border: 2px solid black;
+            margin: 2px;
+        }
+        #c2{
+            display: flex;
+            flex-direction: column;
+        }
+        #c3{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        #c4{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        #c5{
+            display: flex;
+            flex-wrap: nowrap;
+        }
+        #c6{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .w1{
+            height: 300px;
+            width: 300px;
+        }
+        #c7{
+            display: flex;
+            flex-wrap: wrap-reverse;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flex direction : row {BY DEFAULT}</h1>
+    <div class="cont">
+        <img src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg" alt="srk" id="one" >
+        <img src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg" alt="srk" id="two">
+        <img src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg" alt="SRK" id="three">
+    </div>
+    <h1>Flex direction : row-reverse</h1>
+    <div class="cont" id="c4">
+        <img src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg" alt="srk" id="one" >
+        <img src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg" alt="srk" id="two">
+        <img src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg" alt="SRK" id="three">
+    </div>
+    <h1>Flex direction : column</h1>
+    <div class="cont" id="c2">
+        <img src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg" alt="srk" id="one" >
+        <img src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg" alt="srk" id="two">
+        <img src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg" alt="SRK" id="three">
+    </div>
+    <h1>Flex direction : column-reverse</h1>
+    <div class="cont" id="c3">
+        <img src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg" alt="srk" id="one" >
+        <img src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg" alt="srk" id="two">
+        <img src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg" alt="SRK" id="three">
+    </div>
+    <h1>Flex Wrap : no-wrap {BY DEFAULT}</h1>
+    <div class="cont" id="c5">
+        <img src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg" alt="srk" id="one" >
+        <img src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg" alt="srk" id="two">
+        <img src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg" alt="SRK" id="three">
+    </div>
+    <h1>Flex Wrap : wrap</h1>
+    <div class="cont" id="c6">
+        <img src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg" alt="srk" class="w1" >
+        <img src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg" alt="srk" class="w1">
+        <img src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg" alt="SRK" class="w1">
+    </div>
+    <h1>Flex Wrap : wrap-reverse</h1>
+    <div class="cont" id="c7">
+        <img src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg" alt="srk" class="w1" >
+        <img src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg" alt="srk" class="w1">
+        <img src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg" alt="SRK" class="w1">
+    </div>
+
+
+</body>
+</html>

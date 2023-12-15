@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Size Units</title>
+
+    <style>
+        *{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box1{
+            background-color: peru;
+            border: 5px solid green;
+            text-align: center;
+            color: aliceblue;
+            width: 25%;  /* 25 percent of immediate parent i.e immediate parent of box1 div is body*/
+        }
+        .parent{
+            background-color: yellow;
+            border: 2px solid black;
+            height: 100px;
+            width: 50%;
+        }
+        .child{
+            background-color: red;
+            border: 2px solid black;
+            height : 100px ;
+            width: 50%; /* 50 percent of parent div */
+            text-align: center;
+            color: aliceblue ;
+        }
+        .cont{
+            background-color: rgb(187, 187, 67);
+            border: 3px dotted green;
+            height:80vh;
+            width: 70vw;
+        }
+    </style>
+</head>
+<body>
+    <h2>Size Units</h2>
+    <li>pixels px</li>
+    <li>%</li>
+    <li>vw</li>
+    <li>vh</li>
+    <li>em</li>
+    <li>rem</li>
+<br> <br>
+    <div class="box1">
+        Welcome
+    </div> <br> <br>
+    <div class="parent">
+        <div class="child">
+            child
+        </div>
+    </div> <br> <br>
+
+    <div class="cont">
+    </div>
+</body>
+</html>

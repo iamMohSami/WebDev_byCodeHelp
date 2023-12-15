@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION PROPERTY</title>
+
+    <style>
+        *{
+            background-color: aqua;
+        }
+
+        .container {
+            height: 400px;
+            width: 80%;
+            margin: 10px;
+            padding: 20px;
+            background-color: rebeccapurple;
+        }
+
+        .box{
+            display: inline-block;
+            height: 150px;
+            width : 200px ;
+            border: 4px solid black;
+            background-color: red;     
+            /* top: 200px;    no effect as position: static ; */
+       }
+
+       #b5 {
+        position: relative;
+        top: 200px;
+        left: 100px;
+       }
+
+       #b1{
+        position: fixed;
+       }
+       #b3{
+        position: sticky;
+        top: 10px;
+        
+       }
+    </style>
+
+</head>
+<body>
+    <h3>Position Property</h3>
+    <li>Static</li>
+    <li>Relative</li>
+    <li>Absolute</li>
+    <li>Fixed</li>
+    <li>Sticky</li>
+    
+    <h5>By Default , everything Position : Static</h5>
+    <h2>Position : Static</h2>
+    <div class="container">
+        <span class="box" id="b1">position : Fixed</span><span class="box" id="b2"></span><span class="box" id="b3">position : sticky</span>
+    </div>
+    <h2>Position : Relative</h2>
+    <div class="container">
+        <span class="box" id="b4"></span><span class="box" id="b5"></span><span class="box" id="b6"></span>
+    </div>
+</body>
+</html>
