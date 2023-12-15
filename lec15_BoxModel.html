@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Borders , Height Width and Box model</title>
+
+    <style>
+        *{
+            background-color: aqua;
+            /* margin: 0; */
+            /* padding: 0; */
+        }
+
+        h3{
+            border-style: solid;
+            border-width: black;
+            border-color: black;
+            
+            background-color: palevioletred;
+        }
+
+        .para2{
+            background-color: yellow;
+            color: red;
+
+            border: dashed black 5px;  /*Shorthand Notation*/
+        }
+
+        .para3{
+            background-color: orangered;
+            color: aliceblue;
+
+            border: solid greenyellow 8px;
+            border-radius: 50px;
+        }
+
+        .para1{
+            background-color: red;
+            color: aliceblue;
+
+            border-top: 8px solid orange;
+        }
+
+        button{
+            border-radius: 50%;  /*perfect circle 50% */
+            background-color: white;
+            
+        }
+
+        #hw{
+            height: 90px;
+            width: 300px;
+        }
+
+        #sp{
+            background-color: purple;
+            color: aliceblue;
+            border: 7px dashed green;
+
+            height: 400px;
+            width: 50%;   /* No effect */
+        }
+
+        img{
+            height: 400px;
+            width: 50%;
+        }
+
+        .box1{
+            background-color: palevioletred;
+            border: 5px solid black;
+            width: 75%;
+            padding: 25px;
+            margin: 25px;
+        }
+
+    </style>
+
+
+
+
+</head>
+<body>
+    <h3>BORDERS</h3>
+    <p class="para1">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus dolorem, porro, atque at est reiciendis nam sint nesciunt temporibus voluptate consequuntur. Eos facere accusantium neque a obcaecati eveniet iste quae minima mollitia nam numquam eaque saepe, ducimus exercitationem necessitatibus reiciendis nesciunt error? Recusandae cupiditate voluptate nostrum harum voluptas dolorem vel nobis cum delectus, inventore facilis, assumenda, quam beatae possimus. Eveniet obcaecati, explicabo dolorum corrupti in temporibus cupiditate perspiciatis dicta aperiam ipsum, debitis accusantium nam pariatur cum quibusdam dolores quasi et. Nisi error magnam repudiandae officiis, autem nesciunt mollitia laudantium tenetur sunt deserunt minima dignissimos quidem! Quia ullam ipsa nisi ratione.
+    </p>
+
+    <p class="para2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto, nesciunt explicabo minus hic deserunt est aliquid quas harum iure. Consequatur praesentium unde animi earum et modi, veritatis voluptate eaque, pariatur rem a quos sapiente, mollitia quo quia! Quo quisquam unde ex asperiores voluptas sequi earum, esse perspiciatis reprehenderit perferendis libero?
+    </p>
+
+    <article class="para3">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe iste aperiam hic aut accusantium eligendi, laborum magnam natus sed quod asperiores aliquid exercitationem dolorum? Libero quaerat iste illum saepe tempore inventore nisi optio quidem aspernatur maxime, soluta deserunt illo quae odit ducimus modi quibusdam accusantium cumque laboriosam beatae omnis hic! Omnis commodi laborum numquam veritatis animi non, voluptates amet debitis odio ut, rem accusamus culpa at perferendis quis aut. Vel possimus deleniti nam cupiditate, ipsa voluptatum non laboriosam esse sequi!
+    </article>
+    <br>
+    <button>Submit</button>
+    <br>
+
+    <h3 id="hw">HEIGHT AND WIDTH</h3>
+    <span id="sp">This is Span Tag, here no effect of height and width bcoz span is Inline element and it takes space(height and width) only according to content written init</span>
+    <br> <br> <br>
+    <h3>BOX MODEL</h3>
+    <img src="https://miro.medium.com/v2/resize:fit:1400/1*gq1B7v2_gDEi3jkAwAvZNQ.png" alt="box">
+    <img src="https://elearn.ellak.gr/pluginfile.php/8814/mod_book/chapter/4059/boxModel.PNG" alt="box">
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur eligendi voluptatibus corporis at itaque distinctio nemo omnis aut sint repellendus ducimus suscipit, labore esse. Veritatis itaque iusto nesciunt dignissimos a aspernatur! Accusantium, velit natus beatae recusandae eum in accusamus exercitationem minima pariatur similique minus quod neque dolorum quas aliquam repellat iste odit voluptatem et laboriosam vitae labore architecto a soluta! Dolore beatae sint reiciendis, quis accusantium, perferendis nemo ipsa eos doloribus rem nisi cupiditate enim, fugiat sed. Dicta ipsum nihil quis totam, officia maiores iusto unde, consequuntur, nesciunt dignissimos soluta obcaecati ducimus sapiente delectus suscipit qui eveniet aut quae libero ea! Dolorem, assumenda dignissimos quam quidem qui accusamus tenetur laborum quae! Asperiores sunt rem, veniam vitae in nesciunt quod? Autem necessitatibus magnam tenetur ut quidem possimus nam quas minus adipisci optio consequatur in vitae veritatis nulla quibusdam modi fugit, itaque nesciunt ipsa enim voluptatum corporis? Ipsum ut et quidem vitae.
+    </div>
+
+
+
+</body>
+</html>

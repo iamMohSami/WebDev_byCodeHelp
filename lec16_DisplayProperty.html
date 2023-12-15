@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            background-color: aqua;
+        }
+        div{
+            background-color: rebeccapurple;
+            color: aliceblue;
+            height: 300px;
+            width: 400px;
+            padding: 10px;
+            margin : 10px; 
+            border: 3px dotted black;
+        }
+
+        span.sp{
+            background-color: rebeccapurple;
+            color: aliceblue;
+            border: 3px dotted black;
+            padding: 10px;
+            margin: 20px;  /*Only works on Left-Right */
+            height: 100px;  /* No Effect */
+            width : 100 px ;  /* No effect */
+        }
+
+        span.conversion{
+
+            display: block;
+
+            background-color: rebeccapurple;
+            color: aliceblue;
+            border: 3px solid black;
+            height: 30px;
+            width: 475px;
+            margin: 10px;
+        }
+
+        span.mix{
+
+            display: inline-block;
+
+            background-color: rebeccapurple;
+            color: aliceblue;
+            border: 3px solid black;
+            height: 130px;
+            width: 475px;
+            margin: 10px;
+
+        }
+
+        span.none {
+
+            display: none;  /*will not be displayed on webpag*/
+
+            background-color: rebeccapurple;
+            color: aliceblue;
+            border: 3px solid black;
+            height: 130px;
+            width: 475px;
+            margin: 10px;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <h3>Types of Display Properties</h3>
+    <li>Block</li>
+    <li>Inline</li>
+    <li>None</li>
+
+    <h2>BLOCK</h2>
+    <h4>Always new line</h4>
+    <h4>Extreme Right to Extreme Left is Default width</h4>
+    <h4>Custom Height,Width,Margin,Padding is allowed</h4>
+    <h4>Search Examples of BLOCK Elements</h4>
+
+    <div>First Div</div> 
+    <div>Second Div</div>
+
+
+    <h2>INLINE</h2>
+    <h4>Always Try to be on same line </h4>
+    <h4>Width of content is Default width</h4>
+    <h4>Custom Height,Width is  not allowed</h4>
+    <h4>Custom Margin allowed only o Left and Right and not on Top-Bottom</h4>
+    <h4>Custom Padding is allowed</h4>
+    <h4>Search Examples of INLINE Elements</h4>
+
+    <span class="sp">First Span</span>
+    <span class="sp">Second Span</span>
+    <br> <br>
+
+    <h2>CONVERSION FROM INLINE TO BLOCK... YES!!!</h2>
+    <h2>USE display : block</h2>
+    <span class="conversion">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, sint.
+    </span>
+    <span class="conversion">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam, cum.
+    </span>
+    <h2>SIMILARLY, CONVERSION OF BLOCK TO INLINE ... YES!!</h2>
+    <h2>USE display : Inline</h2>
+
+    <h2>MIXTURE OF BLOCK-INLINE ; display : inline-block ;</h2>
+    <h3>Behaves as Inline but can add custom height and width</h3>
+
+    <span class="mix">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae labore eos illo molestias ea suscipit, a laborum voluptates consequatur dolorum?
+    </span>
+    <span class="mix">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae labore eos illo molestias ea suscipit, a laborum voluptates consequatur dolorum?
+    </span>
+    <br> <br>
+
+    <h2>Display : none</h2>
+    <h3>Element is completely removed</h3>
+
+     <span class="none"> <!-- will not be displayed on webpage as display : none  -->
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae labore eos illo molestias ea suscipit, a laborum voluptates consequatur dolorum?
+    </span>
+</body>
+</html>
