@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1,h3{
+            margin: 10px;
+        }
+        .cont{
+            background-color: rgb(202, 202, 44);
+            height: 80vh;
+            width: 98vw;
+            border: 3px solid black;
+            margin: 5px;
+        }
+        #box1{
+            background-color: rgb(90, 90, 198);
+            border: 3px solid rgb(1, 53, 1);
+            height: 70px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 5px;
+            position: relative;
+            /* animation-name: right-movement;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;       
+            animation-direction: alternate; */
+            animation : 3s linear infinite 0.3s alternate right-movement ; /*ShortHand*/
+        }
+
+        @keyframes right-movement {
+            from{
+                top: 0px;
+                left: 0px;
+            }
+            to {
+                top: 0px;
+                left: 1300px;
+                background-color: rgb(5, 239, 5);
+            }
+        }
+
+        #box2{
+            background-color: rgb(90, 90, 198);
+            border: 3px solid rgb(1, 53, 1);
+            height: 70px;
+            width: 200px;
+            border-radius: 10px;
+            margin: 5px;
+            position: relative;
+            top: 400px;
+            left: 1300px;
+            animation : 2.5s linear infinite 0.3s alternate left-movement ; /*ShortHand*/
+        }
+
+        @keyframes left-movement {
+            from{
+                top: 390px;
+                left: 1300px;
+            }
+            to {
+                top: 390px;
+                left: 0;
+                background-color: rgb(244, 9, 213);
+            }
+        }
+
+        .circle{
+            height: 50px;
+            width: 50px;
+            background-color: red;
+            border-radius: 50%;
+            border: 3px solid black;
+            position: relative;
+            top: 180px;
+            left: 650px;
+            animation : 8s linear infinite 0s alternate circle-movement ;
+        }
+
+        @keyframes circle-movement {
+          0%{
+            top: 4px;
+            left: 65px;
+          }
+          25%{
+            top:400px;
+            left: 555px;
+          }
+          50%{
+            top: 4px;
+            left: 1100px;
+          }
+          75%{
+            top: 400px;
+            left: 1050px;
+          }
+          100%{
+            top : 4px ; 
+            left  : 100px ;
+          }
+        }
+   
+    </style>
+</head>
+<body>
+    <h1>What is Animation ?</h1>
+    <h3>When an Element shifts from one style to other, it is called as an Animation</h3>
+    <h3>Animation rules are defined in a Key Frame</h3>
+    <div class="cont">
+        <div class="box" id="box1"></div>
+        <div class="circle" id="circle"></div>
+        <div class="box" id="box2"></div>
+    </div>
+</body>
+</html>

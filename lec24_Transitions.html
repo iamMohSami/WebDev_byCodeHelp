@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transitions in CSS</title>
+    <style>
+        *{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont{
+            height: 500px;
+            width: 500px;
+            margin: 20px;
+            border: 5px solid black ;
+            background-color: rgb(179, 179, 37);
+            /* transition-property: all;
+            transition-duration: 5s;
+            transition-delay: 1s;
+            transition-timing-function: linear; */
+            transition: 5s all 1s linear;  /*Shorthand notations */ 
+        }
+        .cont:hover{
+            width: 1200px;
+            height: 1000px;
+            background-color: rgb(250, 106, 130);
+        }
+    </style>
+</head>
+<body>
+    <h1>What iS Transition</h1>
+    <h3>CSS transitions allows you to change property values smoothly, over a given duration.</h3>
+    <div class="cont">Hover</div>
+</body>
+</html>

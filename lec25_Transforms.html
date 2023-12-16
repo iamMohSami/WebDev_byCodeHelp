@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D TRANSFORMS IN CSS</title>
+    <style>
+        *{
+            background-color: aqua;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .cont{
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+            border: 5px solid black ;
+            background-color: rgb(179, 179, 37);
+            margin: auto;
+            transition: all 2s linear;
+        }
+        .cont:hover{
+            /* transform: rotate(95deg); */
+            /* transform: scale(1.2); */
+            /* transform: skew(45deg); */
+            transform: translate(300px, 100px);
+        }
+    </style>
+</head>
+<body>
+    <h1>What is Transforms?</h1>
+    <h3>CSS transforms allow you to move, rotate, scale, and skew elements.</h3>
+    <div class="cont"></div>
+</body>
+</html>
