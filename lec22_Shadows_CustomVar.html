@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shadows in CSS and Custom Variables</title>
+    <style>
+      * {
+        background-color: aqua;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      :root{   /*UNIVERSAL CUSTOM VARIABLE */
+        --one :  rgb(192, 192, 101);
+        --two : black;
+      }
+      .big{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .box {
+        height: 300px;
+        width: 300px;
+        background-color: var(--one) ;
+        margin: 20px;
+        border: 2px solid var(--two);
+      }
+      #b1 {
+        box-shadow: 10px 10px brown;
+      }
+      #b2 {
+        box-shadow: -10px 10px purple;
+      }
+      #b3 {
+        box-shadow: -10px -10px green;
+      }
+      #b4{
+        box-shadow: 10px 10px 20px yellow;
+      }
+      #b5{
+        box-shadow:  15px 10px 15px 20px orangered;
+      }
+      #b6{
+        box-shadow: inset 15px 10px 15px 20px orangered;
+      }
+      #b7{
+        box-shadow: 15px 10px 6px red , 25px 25px 5px green ; 
+      }
+      #text{
+        margin: 40px;
+        text-shadow: 5px 5px 2px white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BOX SHADOWS</h1>
+    <div class="big">
+      <div class="box" id="b1">
+        <img
+          src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg"
+          alt="srk"
+          id="img1"
+        />
+      </div>
+      <div class="box" id="b2">
+        <img
+          src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg"
+          alt="srk"
+          id="two"
+        />
+      </div>
+     
+      <div class="box" id="b3">
+        <img
+          src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg"
+          alt="SRK"
+          id="three"
+        />
+      </div>
+        <div class="box" id="b4">
+            <img
+              src="https://m.economictimes.com/thumb/msid-95243284,width-1200,height-900,resizemode-4,imgsize-37634/srk-also-struck-his-signature-pose-for-his-fans-.jpg"
+              alt="srk"
+              id="img1"
+            />
+        </div>
+        <div class="box" id="b5">
+        <img
+        src="https://static.toiimg.com/photo/msid-101260613/101260613.jpg"
+        alt="srk"
+        id="two"
+        />
+        </div>
+        <div class="box" id="b6">
+        </div>
+        <div class="box" id="b7">
+            <img
+          src="https://images.herzindagi.info/image/2023/Jun/srk-signature-pose-mannat-record-fans.jpg"
+          alt="SRK"
+          id="three"
+        />
+        </div>
+    </div>
+    <h1 id="text">TEXT SHADOWS</h1>
+    
+  </body>
+</html>
